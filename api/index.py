@@ -1,4 +1,4 @@
-from app import app
+from app.app import app
 
 # Vercel's Python builder will import the `app` ASGI instance from here.
-# Ensure your FastAPI instance in `app/app.py` is named `app`.
+# Importing `app` directly from `app.app` avoids package import ambiguity.
